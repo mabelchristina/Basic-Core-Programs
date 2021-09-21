@@ -14,6 +14,9 @@ namespace BasicCorePrograms
                     FlipCoin flipCoin = new FlipCoin();
                     flipCoin.Flip(Convert.ToInt32(Console.ReadLine()));
                     break;
+                //case 2:
+                 //   FlipCoin flipCoin1 = new FlipCoin();
+                  //  fl
             }
 
         }
