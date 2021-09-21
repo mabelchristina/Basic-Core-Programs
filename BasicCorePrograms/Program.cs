@@ -7,7 +7,7 @@ namespace BasicCorePrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Please choose anyone below\n1.FlipCoin \n2.LeapYear \n3.Power of Two " +
-                "\n4.Harmonic Value\n5.Prime Factor\n6.Division\n7.Swap Numbers\n8.Even or Odd\n9.VowelOrConsonant\n ");
+                "\n4.Harmonic Value\n5.Prime Factor\n6.Division\n7.Swap Numbers\n8.Even or Odd\n9.VowelOrConsonant\n10.LargestOfThreeNumber\n");
             int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
             {
@@ -46,6 +46,12 @@ namespace BasicCorePrograms
                 case 9:
                     VowelOrConsonant vowelOrConsonant = new VowelOrConsonant();
                     vowelOrConsonant.VowelConsonant(Convert.ToChar(Console.ReadLine()));
+                    break;
+                case 10:
+                    LargestNumber largestNumber = new LargestNumber();
+                    largestNumber.LargeNumber(Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()));
+                    break;
+                default:
                     break;
             }
 
