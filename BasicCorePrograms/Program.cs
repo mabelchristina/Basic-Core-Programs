@@ -34,6 +34,10 @@ namespace BasicCorePrograms
                     QuotientAndRemainder remainder = new QuotientAndRemainder();
                     remainder.Division(Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()));
                     break;
+                case 7:
+                    SwapNumbers swap = new SwapNumbers();
+                    swap.Swap(Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()));
+                    break;
             }
 
         }
