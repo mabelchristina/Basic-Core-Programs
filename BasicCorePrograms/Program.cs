@@ -6,7 +6,7 @@ namespace BasicCorePrograms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1.FlipCoin \n2.LeapYear \n3.Power of Two \n");
+            Console.WriteLine("Please choose anyone below\n1.FlipCoin \n2.LeapYear \n3.Power of Two \n4.Harmonic Value\n ");
             int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
             {
@@ -21,8 +21,11 @@ namespace BasicCorePrograms
                 case 3:
                     PowerOfTwo power = new PowerOfTwo();
                     power.PowerofNumber(Convert.ToInt32(Console.ReadLine()));
-                    break;  
-
+                    break;
+                case 4:
+                    Harmonic harmonicNo = new Harmonic();
+                    harmonicNo.HarmonicValue(Convert.ToInt32(Console.ReadLine()));
+                    break;
             }
 
         }
