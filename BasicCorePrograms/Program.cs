@@ -6,7 +6,7 @@ namespace BasicCorePrograms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please choose anyone below\n1.FlipCoin \n2.LeapYear \n3.Power of Two \n4.Harmonic Value\n ");
+            Console.WriteLine("Please choose anyone below\n1.FlipCoin \n2.LeapYear \n3.Power of Two \n4.Harmonic Value\n5.Prime Factor\n ");
             int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
             {
@@ -25,6 +25,10 @@ namespace BasicCorePrograms
                 case 4:
                     Harmonic harmonicNo = new Harmonic();
                     harmonicNo.HarmonicValue(Convert.ToInt32(Console.ReadLine()));
+                    break;
+                case 5:
+                    Factors factors = new Factors();
+                    factors.PrimeFactors(Convert.ToInt32(Console.ReadLine()));
                     break;
             }
 
