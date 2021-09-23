@@ -9,9 +9,9 @@ namespace BasicCorePrograms
         public void Swap(int a,int b)
         {
             Console.WriteLine("Before swap a= " + a + " b= " + b);
-            a = a * b;      
+            a *= b;      
             b = a / b;     
-            a = a / b;     
+            a /= b;     
             Console.Write("After swap a= " + a + " b= " + b);
         }
     }

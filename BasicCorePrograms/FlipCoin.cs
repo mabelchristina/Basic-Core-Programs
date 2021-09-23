@@ -10,9 +10,9 @@ namespace BasicCorePrograms
         double head = 0, tail = 0;
         public void Flip(int N)
         {
-            for(int i=0;i<=N;i++)
+            Random random = new Random();
+            for (int i=0;i<N;i++)
             {
-                Random random = new Random();
                 if (random.NextDouble() < 0.5)
                    this.tail++;
                 else

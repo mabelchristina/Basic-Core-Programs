@@ -11,8 +11,9 @@ namespace BasicCorePrograms
             if (number1 > number2 && number1 > number3)
             {
                 Console.WriteLine(number1 +" is the greatest among three. \n");
+                return;
             }
-            else if (number2 > number1 && number2 > number3)
+            if (number2 > number1 && number2 > number3)
             {
                 Console.WriteLine(number2 +" is the greatest among three \n");
             }

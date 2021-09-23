@@ -8,22 +8,16 @@ namespace BasicCorePrograms
     {
         public void PrimeFactors(int n)
         {
-            while (n % 2 == 0)
+           
+            for (int i = 2; i*i<=n; i++)
             {
-                Console.WriteLine(2 + " ");
-                n /= 2;
-            }
-            for (int i = 3; i <= Math.Sqrt(n); i += 2)
-            {
-                while (n % i == 0)
+                if (n % i == 0)
                 {
-                    Console.WriteLine("prime factors are:"+ i + " ");
-                    n /= i;
+                    if (i == 2 || i % 2 != 0)
+                    {
+                        Console.WriteLine("prime factors are:" + i + " ");
+                    }
                 }
-            }
-            if (n > 2)
-            {
-                Console.WriteLine("prime factors are:"+ n);
             }
         }
     }

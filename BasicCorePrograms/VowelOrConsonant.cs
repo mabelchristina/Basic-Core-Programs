@@ -8,13 +8,14 @@ namespace BasicCorePrograms
     {
         public void VowelConsonant(char ch)
         {
-            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+            ch = char.ToLower(ch);
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
             {
-                Console.WriteLine(ch + " is Vowel.");
+                Console.WriteLine( " Given Character is Vowel.");
             }
             else if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
             {
-                Console.WriteLine(ch + " is Consonant.");
+                Console.WriteLine(" Given Character is Consonant.");
             }
             Console.ReadLine();
         }
